@@ -1,0 +1,32 @@
+.birth-date-container label {
+  @apply text-Ag-13 font-medium text-greyScaleGrey;
+}
+
+.birth-date-input-container {
+  @apply border border-greyScaleGrey grid grid-cols-date h-input p-3 rounded text-Ag-15 text-greyScaleMainBlack;
+}
+
+.birth-date-input-container:focus-within {
+  @apply border-primary-blue;
+}
+
+.birth-date-input-container:hover input::placeholder {
+  @apply text-primaryBlue;
+}
+
+.birth-date-input-container input {
+  @apply pl-2 outline-none w-full;
+}
+.birth-date-input-container input:nth-child(1) {
+  @apply pl-1;
+}
+
+.birth-date-container input::-webkit-outer-spin-button,
+.birth-date-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.birth-date-input-container input:nth-child(2) {
+  @apply border-x border-greyScaleGrey2 pl-3;
+}

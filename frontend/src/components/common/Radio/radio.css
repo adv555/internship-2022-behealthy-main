@@ -1,0 +1,11 @@
+label:hover .icon {
+  @apply shadow-[0_2px_8px_rgba(0,0,0,0.1)];
+}
+
+input[type='radio']:checked + .icon {
+  @apply border-primary-blue p-1;
+}
+
+input[type='radio']:checked + .icon::after {
+  @apply content-[''] absolute w-3.5 h-3.5 rounded-full bg-primary-blue top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+}

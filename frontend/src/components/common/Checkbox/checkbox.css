@@ -1,0 +1,11 @@
+label:hover .icon {
+  @apply shadow-[0_2px_8px_rgba(0,0,0,0.1)];
+}
+
+input[type="checkbox"]:checked + .icon {
+  @apply flex items-center justify-center p-1 bg-primary-blue border-primary-blue;
+}
+
+input[type="checkbox"]:checked + .icon svg {
+  @apply opacity-100;
+}

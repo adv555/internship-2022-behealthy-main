@@ -1,0 +1,15 @@
+.person-card {
+  @apply flex flex-col w-full min-h-[332px] p-4 rounded-lg border border-gray-light transition;
+}
+
+.person-card:hover {
+  @apply shadow-[0_4px_16px_rgba(29,101,137,0.15)];
+}
+
+.person-card-avatar {
+  @apply w-12 h-12 bg-neutral-200 mr-3 rounded-full overflow-hidden shrink-0;
+}
+
+.person-card-avatar img {
+  @apply block object-cover object-center w-full h-full;
+}

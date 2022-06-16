@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .MultiSelect .MultiSelect__control-is-focused {
+    @apply border !border-primaryBlue hover:!border-primaryBlue;
+  }
+
+  .MultiSelect .MultiSelect__control {
+    @apply border rounded-md border-greyScaleGrey text-greyScaleMainBlack shadow-none
+        hover:border-primaryBlue min-h-[46px];
+  }
+
+  .MultiSelect label {
+    @apply text-greyScaleGrey text-sm;
+  }
+
+  .MultiSelect .MultiSelect__indicators {
+    @apply hidden;
+  }
+
+  .MultiSelect .MultiSelect__multi-value {
+    @apply bg-fieldChosen h-[32px] rounded-md text-[15px] leading-[22px] mx-1;
+  }
+
+  .MultiSelect .MultiSelect__multi-value__label {
+    @apply hover:text-primaryBlue;
+  }
+
+  .MultiSelect .MultiSelect__multi-value__remove {
+    @apply border border-greyScaleMainBlack rounded-full w-4 h-4 
+        before:content-['×'] text-sm inline-block leading-[0px] pt-[6px] pl-[3px] mt-[7px] mr-[7px] ml-1
+        hover:bg-disabledBlue hover:border-primaryBlue hover:text-primaryBlue;
+  }
+  .MultiSelect .MultiSelect__multi-value__remove svg {
+    @apply hidden;
+  }
+
+  .MultiSelect .ErrorMsg {
+    @apply text-xs text-secondaryRed;
+  }
+}

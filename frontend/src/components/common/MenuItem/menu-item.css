@@ -1,0 +1,19 @@
+.menu-item svg,
+.menu-item svg path  {
+  @apply transition;
+}
+
+.menu-item.active svg,
+.menu-item:hover svg {
+  @apply fill-blue stroke-blue;
+}
+
+.menu-item.active svg path,
+.menu-item:hover svg path {
+  @apply fill-blue stroke-blue;
+} 
+
+.menu-item.active,
+.menu-item:hover .menu-item-label {
+  @apply text-blue
+}

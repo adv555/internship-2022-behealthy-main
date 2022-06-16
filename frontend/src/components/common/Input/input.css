@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .TextInput .InputContainer {
+    @apply flex flex-wrap;
+  }
+
+  .TextInput input {
+    @apply border rounded-md border-greyScaleGrey min-w-input h-input p-3 text-Ag-15 font-medium text-greyScaleMainBlack opacity-70
+    hover:placeholder:text-primaryBlue hover:text-primaryBlue   
+    focus:border focus:border-primaryBlue focus:outline-0 focus:text-greyScaleMainBlack w-full;
+  }
+
+  .TextInput label {
+    @apply text-greyScaleGrey text-Ag-13 font-medium;
+  }
+
+  .TextInput svg.Icon {
+    @apply text-greyScaleGrey my-2 -ml-9 z-50;
+  }
+
+  .TextInput .PhoneInputCountry {
+    @apply -mr-16 border-r border-greyScaleGrey2 h-5 mt-3 pr-2;
+  }
+  .TextInput .PhoneInput {
+    @apply ml-11px;
+  }
+  .TextInput .PhoneInput input {
+    @apply pl-70px;
+  }
+  .TextInput .PhoneInputCountrySelectArrow {
+    @apply w-2 h-2 mr-1 ml-2;
+  }
+  .TextInput .PhoneInputCountryIconImg {
+    @apply rounded w-5 h-4;
+  }
+  .TextInput .PhoneInputCountryIcon--border {
+    @apply bg-transparent shadow-none;
+  }
+
+  .TextInput .TextInputErrorMsg {
+    @apply text-xs text-secondaryRed;
+  }
+  .TextInput .TextInputError {
+    @apply border-secondaryRed hover:border-secondaryRed;
+  }
+  .InputWithIcon input {
+    @apply pl-9;
+  }
+}

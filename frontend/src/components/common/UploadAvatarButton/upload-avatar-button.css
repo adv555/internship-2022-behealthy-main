@@ -1,0 +1,11 @@
+.upload-avatar-button {
+  @apply flex items-center justify-items-center text-center w-[86px] h-[86px] rounded-full border-2 border-dashed border-gray mx-auto transition;
+}
+
+.upload-avatar-button:hover {
+  @apply bg-gray-ultralight;
+}
+
+.upload-avatar-button img {
+  @apply rounded-full w-full h-full object-cover object-center
+}

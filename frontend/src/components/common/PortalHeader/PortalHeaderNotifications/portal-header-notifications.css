@@ -1,0 +1,7 @@
+.notifications-button {
+  @apply relative w-6 h-6 mx-8;
+}
+
+.unread-notifications::after {
+  @apply content-[''] absolute right-1 top-1 w-[6px] h-[6px] rounded-full bg-green
+}

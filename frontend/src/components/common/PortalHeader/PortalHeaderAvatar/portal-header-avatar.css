@@ -1,0 +1,4 @@
+.avatar img,
+.avatar svg {
+  @apply block object-cover object-center w-full h-full;
+}

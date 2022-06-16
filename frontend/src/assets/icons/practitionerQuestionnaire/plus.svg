@@ -1,0 +1,15 @@
+           <svg
+            className="absolute  top-[calc(50%_-_12px/2)]  left-[calc(50%_-_12px/2)]"
+            width="12"
+            height="12"
+            viewBox="0 0 14 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d='M7 1L7 13M13 6.71429L1 6.71429'
+              stroke="white"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+            />
+          </svg>

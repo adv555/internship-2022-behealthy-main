@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+    .SignUpForm .TextInput {
+        @apply mt-6 
+    }
+
+    .SignUpForm .Submit {
+        @apply my-10 min-w-full
+    }
+}

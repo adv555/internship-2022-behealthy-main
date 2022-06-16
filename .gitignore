@@ -1,0 +1,11 @@
+.idea
+
+#environment
+
+.env
+.env.dev
+
+# shared
+
+backend/src/shared
+frontend/src/shared
